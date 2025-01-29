@@ -10,7 +10,7 @@ export default function Home() {
 
   const calculate1 = async () => {
     try {
-      const response = await fetch(`${process.env.HOST}/api/${opeartion1}`, {
+      const response = await fetch(`http://34.47.174.71:30080/api/${opeartion1}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -31,7 +31,7 @@ export default function Home() {
 
   const calculate2 = async () => {
     try {
-      const response = await fetch(`${process.env.HOST}/api/${opeartion2}`, {
+      const response = await fetch(`/api/${opeartion2}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

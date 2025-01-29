@@ -2,11 +2,9 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: app-ingress
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-    - host: algo360.work.gd # Use this for IP-based access; remove or replace with your domain if using DNS.
+    - host: vikram.work.gd # Use this for IP-based access; remove or replace with your domain if using DNS.
       http:
         paths:
           - path: /
